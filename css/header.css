@@ -1,0 +1,64 @@
+/*-----------------*/
+/*      Header     */
+/*-----------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .6s ease;
+    z-index: 9998;
+    padding: 20px;
+    background-color: var(--header-back-color);
+}
+
+.header__container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header__logo-href {
+    margin-right: 40px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-open {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.header .show-nav {
+    display: block;
+    position: absolute;
+    background: var(--header-show-nav-back-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 100px 15px 20px 15px;
+    z-index: 9999;
+    line-height: 2.3;
+}
+
+.header .show-nav__link {
+    display: block;
+    color: var(--header-show-nav-link-color);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    z-index: 9999;
+    transition: .4s;
+}
+
+.header .show-nav__link:hover {
+    text-decoration: none;
+    color: var(--footer-nav-link-color-hover);
+    transition: .4s;
+}

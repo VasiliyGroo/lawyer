@@ -1,0 +1,14 @@
+.content__reviews {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.reviews__title {
+    padding-bottom: 30px;
+}
+
+.reviews__title h1 {
+    font-weight: 300;
+}

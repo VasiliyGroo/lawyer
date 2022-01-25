@@ -1,0 +1,392 @@
+/*-----------------*/
+/*      Content    */
+/*-----------------*/
+.content {
+    max-width: 100%;
+    height: auto;
+    padding-top: 78px;
+    padding-bottom: 60px;
+}
+
+.content__policy {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* ABOUT_ME */
+
+.about-me {
+    background-color: var(--about-me-bg-color-headpage);
+}
+
+.about-me__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.about-me__head-img {
+    max-width: 300px;
+    margin-bottom: -7px;
+}
+
+.about-me__img {
+    margin-top: 103px;
+}
+
+.about-me__content {
+    padding: 30px 10px 30px 80px;
+}
+
+.about-me__text {
+    padding-bottom: 20px;
+}
+
+.about-me__content-arcticle {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.fas {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--fas-color);
+}
+
+.about-me__phone {
+    padding-bottom: 20px;
+}
+
+.about-me__name {
+    font-weight: 700;
+    color: #F5C191;
+    font-size: 20px;
+}
+
+.about-me__ranl {
+    font-weight: 300;
+}
+
+.fa-quote-left:before {
+    content: "\f10d";
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .tabs__nav-btn {
+        font-size: 14px;
+    }
+}
+
+/* TABS */
+
+.tabs__title-section {
+    font-weight: 300;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    text-align: center;
+    color: var(--body-text-color);
+}
+
+.tabs__item p {
+    margin: 0 0 10px;
+}
+
+.tabs {
+    margin: 50px auto;
+}
+
+.tabs__nav {
+    display: flex;
+}
+
+.tabs__nav-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: var(--tabs-nav-btn-bg-color);
+    border: 0;
+    border-right: 1px solid var(--tabs-nav-btn-hover-color);
+    cursor: pointer;
+    transition: .5s;
+    color: var(--body-text-color);
+}
+
+.tabs__nav-btn:last-child {
+    border-right: none;
+}
+
+.tabs__nav-btn:hover {
+    background-color: var(--tabs-nav-btn-hover-color);
+    transition: .5s;
+}
+
+.tabs__nav-btn.active {
+    background-color: var(--tabs-nav-btn-bg-color-hover-active);
+    border-right-color: var(--tabs-nav-btn-bg-color-hover-active);
+    color: #fff;
+}
+
+.tabs__content {
+    padding: 30px;
+    background-color: var(--about-me-bg-color-headpage);
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .tabs__nav-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .tabs__nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .tabs__nav-btn {
+        border-right: none;
+    }
+}
+
+/* PRACTICES-CARD */
+
+.practices-card {
+    background-color: var(--about-me-bg-color-headpage);
+    padding-bottom: 60px;
+}
+
+.practices-card__title-section {
+    font-weight: 300;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--body-text-color);
+}
+
+.practices-card__item {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-around;
+}
+
+.practices-card__named {
+    font-weight: 300;
+}
+
+.practices-card__container {
+    display: block;
+    text-align: center;
+    width: 119px;
+}
+
+.fa-handshake-alt,
+.fa-briefcase,
+.fa-money-check-edit-alt,
+.fa-building,
+.fa-rings-wedding,
+.fa-file-medical,
+.fa-file-alt,
+.fa-file-invoice-dollar,
+.fa-gavel {
+    padding-bottom: 20px;
+}
+
+.fa-handshake-alt:before {
+    content: "\f2b5";
+    font-size: 40px;
+}
+
+.fa-briefcase:before {
+    content: "\f0b1";
+    font-size: 40px;
+}
+
+.fa-money-check-edit-alt:before {
+    content: "\f873";
+    font-size: 40px;
+}
+
+.fa-building:before {
+    content: "\f1ad";
+    font-size: 40px;
+}
+
+.fa-rings-wedding:before {
+    content: "\f81b";
+    font-size: 40px;
+}
+
+.fa-file-medical:before {
+    content: "\f477";
+    font-size: 40px;
+}
+
+.fa-file-alt:before {
+    content: "\f15c";
+    font-size: 40px;
+}
+
+.fa-file-invoice-dollar:before {
+    content: "\f571";
+    font-size: 40px;
+}
+
+.fa-gavel:before {
+    content: "\f0e3";
+    font-size: 40px;
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .practices-card__named {
+        font-size: 14px;
+    }
+
+    .fa-handshake-alt:before {
+        content: "\f2b5";
+        font-size: 30px;
+    }
+
+    .fa-briefcase:before {
+        content: "\f0b1";
+        font-size: 30px;
+    }
+
+    .fa-money-check-edit-alt:before {
+        content: "\f873";
+        font-size: 30px;
+    }
+
+    .fa-building:before {
+        content: "\f1ad";
+        font-size: 30px;
+    }
+
+    .fa-rings-wedding:before {
+        content: "\f81b";
+        font-size: 30px;
+    }
+
+    .fa-file-medical:before {
+        content: "\f477";
+        font-size: 30px;
+    }
+
+    .fa-file-alt:before {
+        content: "\f15c";
+        font-size: 30px;
+    }
+
+    .fa-file-invoice-dollar:before {
+        content: "\f571";
+        font-size: 30px;
+    }
+
+    .fa-gavel:before {
+        content: "\f0e3";
+        font-size: 30px;
+    }
+}
+
+/* TESTIMONIAL */
+
+
+.testimonial__title-section {
+    font-weight: 300;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--body-text-color);
+}
+
+.testimonial__item {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-around;
+}
+
+.testimonial__container {
+    display: block;
+    text-align: center;
+    width: 150px;
+}
+
+.testimonial__named {
+    font-size: 25px;
+}
+
+.testimonial__text {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.testimonial__container .fa-graduation-cap:before {
+    font-size: 60px;
+}
+
+.testimonial__container .fa-project-diagram:before {
+    font-size: 60px;
+
+}
+
+.testimonial__container .fa-gavel:before {
+    font-size: 60px;
+}
+
+.testimonial__container .fa-headset:before {
+    font-size: 60px;
+}
+
+.fa-graduation-cap,
+.fa-project-diagram,
+.testimonial__container .fa-gavel,
+.fa-headset {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 350px) {
+    .testimonial__container .fa-graduation-cap:before {
+        font-size: 45px;
+    }
+
+    .testimonial__container .fa-project-diagram:before {
+        font-size: 45px;
+
+    }
+
+    .testimonial__container .fa-gavel:before {
+        font-size: 45px;
+    }
+
+    .testimonial__container .fa-headset:before {
+        font-size: 45px;
+    }
+
+    .testimonial__container {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 259px) {
+    .testimonial__container {
+        width: 160px;
+    }
+}

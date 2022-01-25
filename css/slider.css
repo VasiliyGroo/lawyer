@@ -1,0 +1,114 @@
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides {
+    position: relative;
+    height: 30em;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity .7s;
+    -moz-transition: opacity .7s;
+    -o-transition: opacity .7s;
+    transition: opacity .7s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*
+  non-essential styles:
+  just for appearance; change whatever you want
+  */
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.slide:nth-of-type(1) {
+    background-image: var(--slider-item-1-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: var(--slider-item-1-bg-position);
+}
+
+.slide:nth-of-type(2) {
+    background-image: var(--slider-item-2-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: var(--slider-item-2-bg-position);
+}
+
+.slide:nth-of-type(3) {
+    background-image: var(--slider-item-3-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: var(--slider-item-3-bg-position);
+}
+
+.slide__box {
+    display: grid;
+    grid-gap: 25px;
+    max-width: 750px;
+    max-height: fit-content;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--slider-box-bg-color);
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.slide__box-title {
+    font-size: 28px;
+    font-weight: 300;
+    color: #F5C191;
+    line-height: 1;
+}
+
+.slide__box-text {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+
+.slide__box-btn {
+    padding-top: 10px;
+}
+
+.slide__box-btn-href {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    transition: .4s;
+}
+
+.slide__box-btn-href:hover {
+    color: #F5C191;
+    border: 2px solid #F5C191;
+    transition: .4s;
+}

@@ -1,0 +1,47 @@
+:root {
+    --socials-wrapper-item-link-fill: #5f6b96;
+    --body-text-color: #4d5475;
+    --body-back-color: #F5F6F7;
+    --body-a-color: #485FE2;
+    --burger-line-color: #485FE2;
+    --burger-change-bar1-color: #FFFFFF;
+    --burger-change-bar3-color: #FFFFFF;
+    --footer-back-color: #1E2B4A;
+    --footer-nav-link-color: #FFFFFF;
+    --footer-nav-link-color-hover: #485FE2;
+    --footer-copyright-color: #5f6b96;
+    --header-back-color: #FFFFFF;
+    --header-show-nav-link-color: #FFFFFF;
+    --header-show-nav-back-color: rgba(0, 0, 0, 0.9);
+    --nav-link-text-color: #495274;
+    --nav-link-text-color-hover: #485FE2;
+    --nav-link-text-color-active: #485FE2;
+    --slider-item-1-bg-image: url(../img/slider-bg-1-light.jpg);
+    --slider-item-1-bg-position: 100% 17%;
+    --slider-item-2-bg-image: url(../img/slider-bg-2-light.jpg);
+    --slider-item-2-bg-position: 100% 40%;
+    --slider-item-3-bg-image: url(../img/slider-bg-3-light.jpg);
+    --slider-item-3-bg-position: 100% 85%;
+    --slider-box-bg-color: rgba(0, 0, 0, 0.6);
+    --fas-color: #5a638a;
+    --about-me-bg-color-headpage: #FFFFFF;
+    --tabs-nav-btn-hover-color: rgb(192, 192, 192);
+    --tabs-nav-btn-bg-color: #e0e0e0;
+    --tabs-nav-btn-bg-color-hover-active: #485FE2;
+    --slick-arrow-slick-prev: url(../images/sl-arrow_l-dark.svg);
+    --slick-arrow-slick-next: url(../images/sl-arrow_r-dark.svg);
+}
+
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(0);
+}
+
+.switcher__radio:checked {
+    filter: contrast(0%) brightness(180%);
+}
+
+.switcher__status {
+    filter: invert(0);
+}

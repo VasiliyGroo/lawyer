@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Home • Lawyer website</title>
+    <meta name="description"
+        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi odio a reprehenderit quam officia expedita distinctio, sit obcaecati doloribus impedit eligendi alias, cupiditate voluptatibus ullam hic aliquid excepturi saepe magni.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F6F7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#222530">
+    <meta property="og:lacale" content="en-EN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home • Lawyer website">
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi odio a reprehenderit quam officia expedita distinctio, sit obcaecati doloribus impedit eligendi alias, cupiditate voluptatibus ullam hic aliquid excepturi saepe magni.">
+    <meta property="og:url" content="https://vasiliygroo.github.io/lawyer/">
+    <meta property="og:site_name" content="Lawyer website">
+
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#121212">
+    <meta name="theme-color" content="#F5F6F7">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/fontcss/all.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-href"><img class="header__logo-img" src="img/favicon.png"
+                                alt="логотип" /></a>
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__link" id="menu" href="about-me.html">About me</a>
+                        <a class="nav__link" id="menu" href="practices.html">Practices</a>
+                        <a class="nav__link" id="menu" href="projects.html">Projects</a>
+                        <a class="nav__link" id="menu" href="publications.html">Publications</a>
+                        <a class="nav__link" id="menu" href="services.html">Services</a>
+                        <a class="nav__link" id="menu" href="contacts.html">Contacts</a>
+                    </nav>
+                    <div class="switcher">
+                        <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme"
+                            value="light" aria-label="Светлая">
+                        <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme"
+                            value="auto" aria-label="Системная" checked>
+                        <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme"
+                            value="dark" aria-label="Тёмная">
+                        <div class="switcher__status"></div>
+                    </div>
+                    <button class="menu-open" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <ul id="slides">
+                <li class="slide showing">
+                    <div class="container">
+                        <div class="slide__box">
+                            <div class="slide__box-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Eveniet, velit?</div>
+                            <div class="slide__box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Maiores eius nulla qui.</div>
+                            <div class="slide__box-btn">
+                                <a href="services.html" class="slide__box-btn-href">Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="container">
+                        <div class="slide__box">
+                            <div class="slide__box-title">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                            <div class="slide__box-text">Lorem ipsum dolor sit amet.</div>
+                            <div class="slide__box-btn">
+                                <a href="projects.html" class="slide__box-btn-href">Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="container">
+                        <div class="slide__box">
+                            <div class="slide__box-title">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                            <div class="slide__box-text">Lorem ipsum dolor sit.</div>
+                            <div class="slide__box-btn">
+                                <a href="practices.html" class="slide__box-btn-href">Practices</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <section class="about-me">
+                <div class="container">
+                    <div class="about-me__box">
+                        <div class="about-me__img">
+                            <img src="img/lawyerageeva-head-img.png" class="about-me__head-img" alt="Jhon Doe">
+                        </div>
+                        <div class="about-me__content">
+                            <div class="about-me__content-arcticle">
+                                <i class="fas fa-quote-left"></i>
+                                <div class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Quis doloribus sit optio aspernatur ducimus expedita libero quidem eligendi, cumque
+                                    delectus? – <a href="https://www.hse.ru/" rel="noreferrer noopener nofollow"
+                                        target="_blank">HSE</a> and <a href="https://rpa-mu.ru/"
+                                        rel="noreferrer noopener nofollow" target="_blank">VGUU</a> (<a
+                                        href="https://rpa-mu.ru/" rel="noreferrer noopener nofollow" target="_blank">RPA
+                                        MU</a>), Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aliquid
+                                    aspernatur praesentium dolores provident, hic amet at.</div>
+                                <div class="about-me__name">
+                                    Jhon Doe
+                                </div>
+                                <div class="about-me__ranl">
+                                    Lawyer, Human rights defender
+                                </div>
+                                <div class="about-me__phone">
+                                    <a href="tel:+799999999999">+7 (999) 999-99-99</a>
+                                </div>
+                                <div class="about-me__social">
+                                    <ul class="socials-wrapper">
+                                        <li class="socials-wrapper__item"> <a href="https://www.facebook.com/"
+                                                target="_blank" rel="noreferrer noopener nofollow"
+                                                class="socials-wrapper__item-link" aria-label="Facebook"> <svg width="9"
+                                                    height="17" viewBox="0 0 9 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836 2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z" />
+                                                </svg> </a> </li>
+                                        <li class="socials-wrapper__item"> <a href="https://twitter.com/"
+                                                target="_blank" rel="noreferrer noopener nofollow"
+                                                class="socials-wrapper__item-link" aria-label="Twitter"> <svg width="18"
+                                                    height="14" viewBox="0 0 18 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M17.0328 1.84041C16.4253 2.11761 15.7726 2.30417 15.0877 2.38898C15.7868 1.95807 16.3239 1.27594 16.5767 0.46342C15.9222 0.862259 15.1973 1.15191 14.4257 1.308C13.8081 0.631966 12.9276 0.210602 11.9535 0.210602C10.0832 0.210602 8.56631 1.76886 8.56631 3.69017C8.56631 3.96313 8.59598 4.22867 8.65402 4.48334C5.83853 4.33759 3.3424 2.95159 1.67204 0.847419C1.38053 1.36154 1.2135 1.95887 1.2135 2.59648C1.2135 3.80359 1.81147 4.86853 2.72005 5.49303C2.16541 5.47448 1.64276 5.31812 1.18615 5.05709V5.10081C1.18615 6.7876 2.35476 8.19347 3.90258 8.51347C3.61882 8.59297 3.31957 8.63537 3.01181 8.63537C2.79357 8.63537 2.581 8.61417 2.37462 8.5731C2.80543 9.95591 4.05659 10.9619 5.53864 10.99C4.37931 11.9228 2.91868 12.4793 1.33113 12.4793C1.05768 12.4793 0.788618 12.4634 0.523682 12.4308C2.02249 13.4183 3.80327 13.9944 5.71599 13.9944C11.946 13.9944 15.3531 8.69155 15.3531 4.09365C15.3531 3.94259 15.3498 3.79286 15.3433 3.64313C16.0053 3.15286 16.5798 2.53937 17.0338 1.84107" />
+                                                </svg> </a> </li>
+                                        <li class="socials-wrapper__item"> <a
+                                                href="https://api.whatsapp.com/send?phone=" target="_blank"
+                                                rel="noreferrer noopener nofollow" class="socials-wrapper__item-link"
+                                                aria-label="WhatsApp"> <svg width="18" height="18" viewBox="0 0 20 20"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_19_2)">
+                                                        <path
+                                                            d="M14.7989 11.4923C14.76 11.4736 13.3019 10.7556 13.0428 10.6623C12.937 10.6243 12.8237 10.5873 12.7032 10.5873C12.5063 10.5873 12.3409 10.6854 12.2121 10.8781C12.0664 11.0946 11.6255 11.61 11.4893 11.7639C11.4715 11.7843 11.4472 11.8086 11.4327 11.8086C11.4196 11.8086 11.194 11.7156 11.1257 11.686C9.56158 11.0065 8.37438 9.37271 8.21159 9.09719C8.18834 9.05758 8.18736 9.0396 8.18717 9.0396C8.19288 9.01862 8.24548 8.96589 8.27262 8.93869C8.35204 8.86012 8.43808 8.75654 8.52133 8.65635C8.56074 8.60888 8.60022 8.56135 8.63899 8.51654C8.75977 8.37602 8.81353 8.26693 8.87587 8.14057L8.90853 8.07492C9.06074 7.77252 8.93074 7.51732 8.88873 7.43492C8.85425 7.36596 8.2386 5.88012 8.17314 5.72401C8.01574 5.34733 7.80775 5.17194 7.51873 5.17194C7.49191 5.17194 7.51873 5.17194 7.40626 5.17668C7.26931 5.18246 6.52354 5.28064 6.1938 5.48849C5.84412 5.70895 5.25256 6.41168 5.25256 7.64752C5.25256 8.75979 5.95841 9.80998 6.26146 10.2094C6.26899 10.2195 6.28282 10.2399 6.30289 10.2693C7.46347 11.9642 8.91029 13.2203 10.377 13.8062C11.789 14.3702 12.4576 14.4354 12.8377 14.4354C12.8378 14.4354 12.8378 14.4354 12.8378 14.4354C12.9976 14.4354 13.1254 14.4229 13.2382 14.4118L13.3098 14.405C13.7976 14.3617 14.8695 13.8063 15.1133 13.1287C15.3054 12.595 15.3561 12.0119 15.2283 11.8002C15.1407 11.6563 14.9899 11.5839 14.7989 11.4923Z"
+                                                            fill="#5E81FF" />
+                                                        <path
+                                                            d="M10.1775 0C4.7609 0 0.354141 4.37364 0.354141 9.74955C0.354141 11.4883 0.819466 13.1903 1.70096 14.6799L0.0137512 19.6569C-0.0176774 19.7497 0.00569921 19.8523 0.0743356 19.9221C0.123881 19.9727 0.191089 20 0.259725 20C0.286024 20 0.312518 19.996 0.338362 19.9878L5.52798 18.3387C6.94811 19.0975 8.55317 19.498 10.1776 19.498C15.5937 19.4981 20 15.1249 20 9.74955C20 4.37364 15.5937 0 10.1775 0ZM10.1775 17.4671C8.64902 17.4671 7.16856 17.0258 5.89596 16.1907C5.85317 16.1626 5.8035 16.1482 5.7535 16.1482C5.72707 16.1482 5.70057 16.1522 5.6748 16.1604L3.07512 16.9868L3.91434 14.5108C3.94148 14.4307 3.92791 14.3423 3.87791 14.274C2.90882 12.9499 2.39655 11.3854 2.39655 9.74955C2.39655 5.49351 5.88707 2.03091 10.1775 2.03091C14.4673 2.03091 17.9575 5.49351 17.9575 9.74955C17.9575 14.0051 14.4675 17.4671 10.1775 17.4671Z"
+                                                            fill="#5E81FF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_19_2">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a> </li>
+                                        <li class="socials-wrapper__item"> <a href="https://www.instagram.com/"
+                                                target="_blank" rel="noreferrer noopener nofollow"
+                                                class="socials-wrapper__item-link" aria-label="Instagram"> <svg
+                                                    width="16" height="16" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0C7.28417 0 6.94362 0.0115215 5.877 0.0601678C4.81262 0.108725 4.08569 0.277796 3.4496 0.524957C2.79201 0.780514 2.23434 1.12247 1.67842 1.67839C1.12247 2.23431 0.780514 2.79204 0.524987 3.44963C0.277766 4.08569 0.108755 4.81262 0.060138 5.877C0.0114917 6.94362 0 7.28417 0 10C0 12.7158 0.0114917 13.0564 0.060138 14.123C0.108755 15.1874 0.277766 15.9143 0.524987 16.5504C0.780544 17.208 1.1225 17.7656 1.67842 18.3216C2.23437 18.8775 2.79201 19.2195 3.4496 19.475C4.08569 19.7222 4.81262 19.8912 5.877 19.9398C6.94362 19.9885 7.28417 20 10 20C12.7158 20 13.0564 19.9885 14.123 19.9398C15.1874 19.8913 15.9143 19.7222 16.5504 19.475C17.208 19.2195 17.7656 18.8775 18.3216 18.3216C18.8775 17.7656 19.2195 17.208 19.475 16.5504C19.7222 15.9143 19.8913 15.1874 19.9398 14.123C19.9885 13.0564 20 12.7158 20 10C20 7.28417 19.9885 6.94362 19.9398 5.877C19.8913 4.81262 19.7222 4.08569 19.475 3.44963C19.2195 2.79204 18.8775 2.23431 18.3216 1.67839C17.7656 1.12247 17.208 0.780514 16.5504 0.524957C15.9143 0.277796 15.1874 0.108725 14.123 0.0601678C13.0564 0.0115215 12.7158 0 10 0ZM10 1.80179C12.6701 1.80179 12.9864 1.812 14.0409 1.86011C15.0159 1.90456 15.5454 2.06747 15.8977 2.20442C16.3645 2.38584 16.6976 2.60252 17.0475 2.95245C17.3975 3.30238 17.6142 3.63552 17.7956 4.10228C17.9325 4.45465 18.0954 4.98416 18.1399 5.95914C18.188 7.01361 18.1982 7.3299 18.1982 10C18.1982 12.6701 18.188 12.9864 18.1399 14.0409C18.0954 15.0159 17.9325 15.5454 17.7956 15.8977C17.6142 16.3645 17.3975 16.6976 17.0475 17.0475C16.6976 17.3975 16.3645 17.6142 15.8977 17.7956C15.5454 17.9325 15.0158 18.0954 14.0409 18.1399C12.9866 18.188 12.6703 18.1982 10 18.1982C7.32969 18.1982 7.01349 18.188 5.95914 18.1399C4.98413 18.0954 4.45465 17.9325 4.10231 17.7956C3.63549 17.6142 3.30238 17.3975 2.95248 17.0475C2.60255 16.6976 2.38584 16.3645 2.20442 15.8977C2.06747 15.5454 1.90459 15.0158 1.86011 14.0409C1.812 12.9864 1.80179 12.6701 1.80179 10C1.80179 7.3299 1.812 7.01361 1.86011 5.95914C1.90459 4.98413 2.06747 4.45465 2.20442 4.10231C2.38584 3.63549 2.60255 3.30238 2.95245 2.95248C3.30238 2.60252 3.63552 2.38584 4.10228 2.20442C4.45465 2.06747 4.98416 1.90456 5.95914 1.86011C7.01361 1.812 7.3299 1.80179 10 1.80179"
+                                                        fill="#5E81FF" />
+                                                    <path
+                                                        d="M10 13.3333C8.15903 13.3333 6.66666 11.841 6.66666 10C6.66666 8.15902 8.15903 6.66665 10 6.66665C11.841 6.66665 13.3333 8.15902 13.3333 10C13.3333 11.841 11.841 13.3333 10 13.3333ZM10 4.86486C7.16393 4.86486 4.86487 7.16392 4.86487 10C4.86487 12.8361 7.16393 15.1351 10 15.1351C12.8361 15.1351 15.1351 12.8361 15.1351 10C15.1351 7.16392 12.8361 4.86486 10 4.86486ZM16.538 4.66197C16.538 5.32473 16.0008 5.86196 15.338 5.86196C14.6753 5.86196 14.138 5.32473 14.138 4.66197C14.138 3.99923 14.6753 3.46194 15.338 3.46194C16.0008 3.46194 16.538 3.99923 16.538 4.66197Z"
+                                                        fill="#5E81FF" />
+                                                </svg> </a> </li>
+                                        <li class="socials-wrapper__item"> <a href="https://zakon.ru/" target="_blank"
+                                                rel="noreferrer noopener nofollow" class="socials-wrapper__item-link"
+                                                aria-label="Zakon"> <svg width="13" height="16" viewBox="0 0 14 18"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.0556 5.08696V1.56522H14V0H0V1.56522H1.94444V5.08657C1.94444 6.81652 3.97133 8.19548 5.44444 9.00039C3.97133 9.8053 1.94444 11.1843 1.94444 12.9138V16.4348H0V18H14V16.4348H12.0556V12.9134C12.0556 11.1835 10.0287 9.80491 8.55556 9C10.0287 8.19509 12.0556 6.81691 12.0556 5.08696ZM10.5 12.9134V16.4348H3.5V12.9134C3.5 11.9148 5.38806 10.4987 7 9.78261C8.61194 10.4987 10.5 11.9152 10.5 12.9134ZM10.5 5.08696C10.5 6.08596 8.61117 7.50209 7 8.21739C5.41411 7.51187 3.5 6.07774 3.5 5.08617V1.56522H10.5V5.08696Z"
+                                                        fill="#5E81FF" />
+                                                </svg>
+                                            </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tabs">
+                <div class="container">
+                    <div class="tabs__title-section">
+                        Projects
+                    </div>
+                    <div class="tabs__nav">
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Civil law</button>
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Family law</button>
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Inheritance law</button>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__item" id="tab_1">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, dolorem aliquam.
+                            </p>
+                            <div class="tabs__item-btn"><a class="tabs__item-btn-tab" href="projects#vzyskanie">Read
+                                    more</a></div>
+                        </div>
+
+                        <div class="tabs__item" id="tab_2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium nemo ratione
+                                eos.</p>
+                            <div class="tabs__item-btn"><a class="tabs__item-btn-tab" href="projects#razdel-1">Read
+                                    more</a></div>
+                        </div>
+
+                        <div class="tabs__item" id="tab_3">
+                            <p>Lorem, ipsum dolor.</p>
+                            <div class="tabs__item-btn"><a class="tabs__item-btn-tab" href="projects#priznanie">Read
+                                    more</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="practices-card">
+                <div class="container">
+                    <div class="practices-card__title-section">
+                        Practices
+                    </div>
+                    <div class="practices-card__item">
+                        <a href="practices#family-law">
+                            <div class="practices-card__container">
+                                <div class="practices-card__icon"><i class="fal fa-rings-wedding"></i></div>
+                                <div class="practices-card__named">Family law</div>
+                            </div>
+                        </a>
+                        <a href="practices#inheritance-law">
+                            <div class="practices-card__container">
+                                <div class="practices-card__icon"><i class="fal fa-money-check-edit-alt"></i></div>
+                                <div class="practices-card__named">Inheritance law</div>
+                            </div>
+                        </a>
+                        <a href="practices#housing0law">
+                            <div class="practices-card__container">
+                                <div class="practices-card__icon"><i class="fal fa-building"></i></div>
+                                <div class="practices-card__named">Housing law</div>
+                            </div>
+                        </a>
+                        <a href="practices#labor-law">
+                            <div class="practices-card__container">
+                                <div class="practices-card__icon"><i class="fal fa-briefcase"></i></div>
+                                <div class="practices-card__named">Labor law</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial">
+                <div class="container">
+                    <div class="testimonial__title-section">
+                        Why do customers choose me
+                    </div>
+                    <div class="testimonial__item">
+                        <a href="practices.html">
+                            <div class="testimonial__container">
+                                <div class="testimonial__icon"><i class="fal fa-graduation-cap"></i></div>
+                                <div class="testimonial__named">
+                                    <script type="text/javascript">
+                                        var mdate = new Date();
+                                        document.write(mdate.getFullYear() - 2012);
+                                    </script> years
+                                </div>
+                                <div class="testimonial__text">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </a>
+                        <a href="projects.html">
+                            <div class="testimonial__container">
+                                <div class="testimonial__icon"><i class="fal fa-project-diagram"></i></div>
+                                <div class="testimonial__named">120+</div>
+                                <div class="testimonial__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Sint!</div>
+                            </div>
+                        </a>
+                        <a href="projects.html">
+                            <div class="testimonial__container">
+                                <div class="testimonial__icon"><i class="fal fa-gavel"></i></div>
+                                <div class="testimonial__named">100%</div>
+                                <div class="testimonial__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ut fuga repudiandae voluptate!</div>
+                            </div>
+                        </a>
+                        <a href="contacts.html">
+                            <div class="testimonial__container">
+                                <div class="testimonial__icon"><i class="fal fa-headset"></i></div>
+                                <div class="testimonial__named">24/7</div>
+                                <div class="testimonial__text">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </a>
+                    </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a href="/" class="footer__logo-href"><img class="footer__logo-img" src="img/favicon.png"
+                                alt="логотип" /></a>
+                    </div>
+                    <nav class="footer__nav">
+                        <a class="footer__nav-link" id="footer" href="services.html">Cost of services</a>
+                        <a class="footer__nav-link" id="footer" href="publications.html">Publications</a>
+                        <a class="footer__nav-link" id="footer" href="projects.html">Projects</a>
+                        <a class="footer__nav-link" id="footer" href="contacts.html">Contacts</a>
+                        <a class="footer__nav-link" id="footer" href="#">Privacy Policy</a>
+                    </nav>
+                    <div class="socials">
+                        <ul class="socials-wrapper">
+                            <li class="socials-wrapper__item"> <a href="https://www.facebook.com/" target="_blank"
+                                    rel="noreferrer noopener nofollow" class="socials-wrapper__item-link"
+                                    aria-label="Facebook"> <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836 2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z" />
+                                    </svg> </a> </li>
+                            <li class="socials-wrapper__item"> <a href="https://twitter.com/" target="_blank"
+                                    rel="noreferrer noopener nofollow" class="socials-wrapper__item-link"
+                                    aria-label="Twitter"> <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.0328 1.84041C16.4253 2.11761 15.7726 2.30417 15.0877 2.38898C15.7868 1.95807 16.3239 1.27594 16.5767 0.46342C15.9222 0.862259 15.1973 1.15191 14.4257 1.308C13.8081 0.631966 12.9276 0.210602 11.9535 0.210602C10.0832 0.210602 8.56631 1.76886 8.56631 3.69017C8.56631 3.96313 8.59598 4.22867 8.65402 4.48334C5.83853 4.33759 3.3424 2.95159 1.67204 0.847419C1.38053 1.36154 1.2135 1.95887 1.2135 2.59648C1.2135 3.80359 1.81147 4.86853 2.72005 5.49303C2.16541 5.47448 1.64276 5.31812 1.18615 5.05709V5.10081C1.18615 6.7876 2.35476 8.19347 3.90258 8.51347C3.61882 8.59297 3.31957 8.63537 3.01181 8.63537C2.79357 8.63537 2.581 8.61417 2.37462 8.5731C2.80543 9.95591 4.05659 10.9619 5.53864 10.99C4.37931 11.9228 2.91868 12.4793 1.33113 12.4793C1.05768 12.4793 0.788618 12.4634 0.523682 12.4308C2.02249 13.4183 3.80327 13.9944 5.71599 13.9944C11.946 13.9944 15.3531 8.69155 15.3531 4.09365C15.3531 3.94259 15.3498 3.79286 15.3433 3.64313C16.0053 3.15286 16.5798 2.53937 17.0338 1.84107" />
+                                    </svg> </a> </li>
+                            <li class="socials-wrapper__item"> <a href="https://www.instagram.com/" target="_blank"
+                                    rel="noreferrer noopener nofollow" class="socials-wrapper__item-link"
+                                    aria-label="Instagram"> <svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 0C7.28417 0 6.94362 0.0115215 5.877 0.0601678C4.81262 0.108725 4.08569 0.277796 3.4496 0.524957C2.79201 0.780514 2.23434 1.12247 1.67842 1.67839C1.12247 2.23431 0.780514 2.79204 0.524987 3.44963C0.277766 4.08569 0.108755 4.81262 0.060138 5.877C0.0114917 6.94362 0 7.28417 0 10C0 12.7158 0.0114917 13.0564 0.060138 14.123C0.108755 15.1874 0.277766 15.9143 0.524987 16.5504C0.780544 17.208 1.1225 17.7656 1.67842 18.3216C2.23437 18.8775 2.79201 19.2195 3.4496 19.475C4.08569 19.7222 4.81262 19.8912 5.877 19.9398C6.94362 19.9885 7.28417 20 10 20C12.7158 20 13.0564 19.9885 14.123 19.9398C15.1874 19.8913 15.9143 19.7222 16.5504 19.475C17.208 19.2195 17.7656 18.8775 18.3216 18.3216C18.8775 17.7656 19.2195 17.208 19.475 16.5504C19.7222 15.9143 19.8913 15.1874 19.9398 14.123C19.9885 13.0564 20 12.7158 20 10C20 7.28417 19.9885 6.94362 19.9398 5.877C19.8913 4.81262 19.7222 4.08569 19.475 3.44963C19.2195 2.79204 18.8775 2.23431 18.3216 1.67839C17.7656 1.12247 17.208 0.780514 16.5504 0.524957C15.9143 0.277796 15.1874 0.108725 14.123 0.0601678C13.0564 0.0115215 12.7158 0 10 0ZM10 1.80179C12.6701 1.80179 12.9864 1.812 14.0409 1.86011C15.0159 1.90456 15.5454 2.06747 15.8977 2.20442C16.3645 2.38584 16.6976 2.60252 17.0475 2.95245C17.3975 3.30238 17.6142 3.63552 17.7956 4.10228C17.9325 4.45465 18.0954 4.98416 18.1399 5.95914C18.188 7.01361 18.1982 7.3299 18.1982 10C18.1982 12.6701 18.188 12.9864 18.1399 14.0409C18.0954 15.0159 17.9325 15.5454 17.7956 15.8977C17.6142 16.3645 17.3975 16.6976 17.0475 17.0475C16.6976 17.3975 16.3645 17.6142 15.8977 17.7956C15.5454 17.9325 15.0158 18.0954 14.0409 18.1399C12.9866 18.188 12.6703 18.1982 10 18.1982C7.32969 18.1982 7.01349 18.188 5.95914 18.1399C4.98413 18.0954 4.45465 17.9325 4.10231 17.7956C3.63549 17.6142 3.30238 17.3975 2.95248 17.0475C2.60255 16.6976 2.38584 16.3645 2.20442 15.8977C2.06747 15.5454 1.90459 15.0158 1.86011 14.0409C1.812 12.9864 1.80179 12.6701 1.80179 10C1.80179 7.3299 1.812 7.01361 1.86011 5.95914C1.90459 4.98413 2.06747 4.45465 2.20442 4.10231C2.38584 3.63549 2.60255 3.30238 2.95245 2.95248C3.30238 2.60252 3.63552 2.38584 4.10228 2.20442C4.45465 2.06747 4.98416 1.90456 5.95914 1.86011C7.01361 1.812 7.3299 1.80179 10 1.80179"
+                                            fill="#5E81FF" />
+                                        <path
+                                            d="M10 13.3333C8.15903 13.3333 6.66666 11.841 6.66666 10C6.66666 8.15902 8.15903 6.66665 10 6.66665C11.841 6.66665 13.3333 8.15902 13.3333 10C13.3333 11.841 11.841 13.3333 10 13.3333ZM10 4.86486C7.16393 4.86486 4.86487 7.16392 4.86487 10C4.86487 12.8361 7.16393 15.1351 10 15.1351C12.8361 15.1351 15.1351 12.8361 15.1351 10C15.1351 7.16392 12.8361 4.86486 10 4.86486ZM16.538 4.66197C16.538 5.32473 16.0008 5.86196 15.338 5.86196C14.6753 5.86196 14.138 5.32473 14.138 4.66197C14.138 3.99923 14.6753 3.46194 15.338 3.46194C16.0008 3.46194 16.538 3.99923 16.538 4.66197Z"
+                                            fill="#5E81FF" />
+                                    </svg> </a> </li>
+                            <li class="socials-wrapper__item"> <a href="https://zakon.ru/" target="_blank"
+                                    rel="noreferrer noopener nofollow" class="socials-wrapper__item-link"
+                                    aria-label="Zakon"> <svg width="13" height="16" viewBox="0 0 14 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0556 5.08696V1.56522H14V0H0V1.56522H1.94444V5.08657C1.94444 6.81652 3.97133 8.19548 5.44444 9.00039C3.97133 9.8053 1.94444 11.1843 1.94444 12.9138V16.4348H0V18H14V16.4348H12.0556V12.9134C12.0556 11.1835 10.0287 9.80491 8.55556 9C10.0287 8.19509 12.0556 6.81691 12.0556 5.08696ZM10.5 12.9134V16.4348H3.5V12.9134C3.5 11.9148 5.38806 10.4987 7 9.78261C8.61194 10.4987 10.5 11.9152 10.5 12.9134ZM10.5 5.08696C10.5 6.08596 8.61117 7.50209 7 8.21739C5.41411 7.51187 3.5 6.07774 3.5 5.08617V1.56522H10.5V5.08696Z"
+                                            fill="#5E81FF" />
+                                    </svg>
+                                </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="footer__copyright">© <script type="text/javascript">
+                            var mdate = new Date();
+                            document.write(mdate.getFullYear());
+                        </script>, Lawyer website. All right reserved.<br>Developed by <a
+                            href="https://github.com/VasiliyGroo" class="developer-copyright" target="_blank"
+                            rel="noreferrer noopener nofollow">Vasiliy Grudinin</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/active-link.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/scheme.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/cookie.js"></script>
+    <script>
+        var hash = window.location.hash;
+        $('.tabs__item-btn-tab').each(function () {
+            if ($(this).attr('li') == hash) {
+                $(this).trigger('click');
+            }
+        });
+    </script>
+</body>
+
+</html>

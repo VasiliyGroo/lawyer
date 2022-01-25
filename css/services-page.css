@@ -1,0 +1,164 @@
+.content__services {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.services__title {
+    padding-bottom: 30px;
+}
+
+.services__title h1 {
+    font-weight: 300;
+}
+
+/* ACCORDING */
+
+.faq-accordion {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.faq-accordion__item {
+    border-bottom: 1px solid #c7d3ff;
+}
+
+.faq-accordion__item--active .arrow {
+    stroke: var(--body-text-color);
+}
+
+.faq-accordion__item--active .faq-accordion__item-trigger-icon {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.faq-accordion__item--active .faq-accordion__item-trigger-text {
+    font-weight: 700;
+    color: var(--body-text-color);
+}
+
+.faq-accordion__item--active .faq-accordion__item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.faq-accordion__item-trigger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.faq-accordion__item-trigger-icon {
+    width: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.faq-accordion__item-trigger-icon .arrow {
+    stroke: #8e96b7;
+}
+
+.faq-accordion__item-trigger-text {
+    font-size: .9375rem;
+    line-height: 1.3;
+}
+
+.faq-accordion__item-content-text a {
+    color: var(--body-a-color);
+    transition: .4s;
+}
+
+.faq-accordion__item-content {
+    display: none;
+    padding: 0 1rem 1rem 3rem;
+    transition: .4s;
+}
+
+.faq-accordion__item-content-text {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: .9375rem;
+    line-height: 1.3;
+}
+
+/* ABOUT_ME */
+
+.services__about-me-box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.services__about-me-img {
+    width: 165px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+}
+
+.services__about-me-head-img {
+    width: 120px;
+    height: 120px;
+}
+
+
+.services__about-me-content {
+    padding: 30px 10px 30px 40px;
+}
+
+.services__about-me-title {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.services__about-me-text {
+    padding-bottom: 20px;
+}
+
+.services__about-me-content-arcticle {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.services__about-me-name {
+    font-weight: 700;
+    color: #F5C191;
+    font-size: 18px;
+
+}
+
+.services__about-me-ranl {
+    font-weight: 300;
+    font-size: 12px;
+
+}
+
+.services__real-time {
+    text-align: end;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .services__about-me-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .services__about-me-content {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .services__about-me-head-img {
+        width: 100px;
+        height: 100px;
+    }
+}
